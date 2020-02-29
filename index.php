@@ -52,10 +52,24 @@
 
  $arreglo=array("Carlos","Neymar","Dimaria","Jesús");
  foreach($arreglo as $clave=>$valor){
-     echo("<br> La clave  del cajon es :".$clave);
-     echo("<br> El valor del cajon es:" .$valor);
+     echo("<br> La clave  del cajon es:".$clave);
+     echo("<br> El valor del cajon es:".$valor);
 
  }
+
+
+ //arreglo multidimensional(arreglo de arreglos)
+ $usuarios=array(
+     'usuario1'=>array('nombre'=>"Carlos",'edad'=>20,'sexo'=>"Masculino"),
+     'usuario2'=>array('nombre'=>"Neymar",'edad'=>22,'sexo'=>"Masculino"),
+     'usuario3'=>array('nombre'=>"Dimaria",'edad'=>23,'sexo'=>"Femenino"),
+     'usuario4'=>array('nombre'=>"Jesús",'edad'=> 4,'sexo'=>"Masculino")
+ );
+  
+
+
+ 
+ 
 
 
 
