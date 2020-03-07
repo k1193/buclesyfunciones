@@ -1,4 +1,7 @@
 <?php
+
+include('funciones.php');
+
  echo(" Clase 4 bucles, arreglos y funciones");
  //array indexado
  $arreglo=array("Carlos","Neymar","Dimaria","Jesús");
@@ -91,6 +94,31 @@
 
      }
  } 
+
+
+ //calcular  la edad de 2 personas 
+ calcularedad(1999);
+ echo("<br>..................................");
+ echo("<br>");
+ calcularedad2(1998,2019);
+ echo("<br>..................................");
+ echo("<br>");
+ $edad3=calcularedad3(1998,2019);
+ echo("La edad de la persona es:".$edad3);
+ 
+
+ //arreglo  que se llena  con una funcion
+ echo("<br>..................................");
+ echo("<br>");
+ $edades=array('edad1'=>calcularedad3(1998,2019),'edad2'=>calcularedad3(1999,2019));
+ print_r($edades);
+ 
+
+
+
+
+   
+
 
 
  
