@@ -59,13 +59,38 @@
 
 
  //arreglo multidimensional(arreglo de arreglos)
+ echo("<br>");
+ echo("<br>..................................");
+
  $usuarios=array(
      'usuario1'=>array('nombre'=>"Carlos",'edad'=>20,'sexo'=>"Masculino"),
      'usuario2'=>array('nombre'=>"Neymar",'edad'=>22,'sexo'=>"Masculino"),
      'usuario3'=>array('nombre'=>"Dimaria",'edad'=>23,'sexo'=>"Femenino"),
      'usuario4'=>array('nombre'=>"Jesús",'edad'=> 4,'sexo'=>"Masculino")
  );
+ echo("<br>");
+ echo("<br>..................................");
+ print_r($usuarios);
+ echo("<br>");
   
+
+ //Ciclo foreach para acceder  a  los elementos  del arreglo multidimensional
+ echo("<br>..................................<br>");
+ foreach($usuarios as $clavesArreglosUnidimensionales=>$ArreglosUnidimensionales){
+     echo($clavesArreglosUnidimensionales);
+     echo("<br>..................................");
+     print_r($ArreglosUnidimensionales);
+     echo("<br>");
+     //mostrar caja por caja lo que  necesito
+     foreach($ArreglosUnidimensionales as $claves=>$valores){
+        
+         echo($claves).":";  
+         echo($valores).":";
+         echo("<br>..................................");
+         echo("<br>");
+
+     }
+ } 
 
 
  
